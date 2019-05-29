@@ -801,6 +801,7 @@
 </blockquote>
 <p>这里<code>post</code>是页面布局方式，可选项，默认为post。</p>
 <h3 id="Layout"><a href="#Layout" class="headerlink" title="Layout"></a>Layout</h3><p>在Hexo有三种页面布局方式：<code>post</code>，<code>page</code>以及<code>draft</code>。不同布局的页面会被保存在不同的文件夹下，具体如下：</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -823,7 +824,9 @@
 </tr>
 </tbody>
 </table>
+</div>
 <h3 id="Filename"><a href="#Filename" class="headerlink" title="Filename"></a>Filename</h3><p>默认情况下，Hexo使用title作为文件名，你也可以在<code>_config.yml</code>文件中修改默认配置，比如<code>:year-:month-:day-:title.md</code>。有以下这些占位符可以使用：</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -858,6 +861,7 @@
 </tr>
 </tbody>
 </table>
+</div>
 
           
         
@@ -1421,6 +1425,28 @@
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
 
   
 
