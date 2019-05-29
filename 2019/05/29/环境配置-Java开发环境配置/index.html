@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="技术文档整理">
 <meta property="og:description" content="Java环境配置这里JDK的安装过程省略，只讲环境变量怎么配，所有环境变量都增加在系统变量中。  新建 $\rightarrow$ 变量名”JAVA_HOME”，变量值”C:\Program Files\Java\jdk1.8.0_201”(JDK安装目录)。 编辑 $\rightarrow$ 变量名”Path”，添加两个新的变量： ​    （1）%JAVA_HOME%\bin ​    （2）">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-29T14:04:49.809Z">
+<meta property="og:updated_time" content="2019-05-29T14:08:13.762Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="环境配置-Java开发环境配置">
 <meta name="twitter:description" content="Java环境配置这里JDK的安装过程省略，只讲环境变量怎么配，所有环境变量都增加在系统变量中。  新建 $\rightarrow$ 变量名”JAVA_HOME”，变量值”C:\Program Files\Java\jdk1.8.0_201”(JDK安装目录)。 编辑 $\rightarrow$ 变量名”Path”，添加两个新的变量： ​    （1）%JAVA_HOME%\bin ​    （2）">
@@ -316,8 +316,9 @@
 <p>编辑 $\rightarrow$ 变量名”Path”，添加两个新的变量：</p>
 <p>​    （1）%JAVA_HOME%\bin</p>
 <p>​    （2）%JAVA_HOME%\jre\bin</p>
-<p>如果不能单独添加，变量名是写在一行的话，在原来变量名后添加”;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin”。</p>
-<p>新建 $\rightarrow$ 变量名”CLASSPATH”，变量值”.;%JAVA_HOME%\lib;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar” 。</p>
+<p>如果不能单独添加，变量名是写在一行的话，在原来变量名后添加：</p>
+<p>“;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin”</p>
+<p>新建 $\rightarrow$ 变量名”CLASSPATH”，变量值为：”.;%JAVA_HOME%\lib;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar” </p>
 </blockquote>
 <p>要验证是否配置正确，可在命令行下输入<code>javac</code>、<code>java -version</code>等命令，能出现Java相关信息，则说明配置完成了。</p>
 
