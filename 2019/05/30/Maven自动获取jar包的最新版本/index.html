@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="使用Maven的range dependency机制： 12345&amp;lt;dependency&amp;gt;	&amp;lt;groupId&amp;gt;org.demogroup&amp;lt;/groupId&amp;gt;    &amp;lt;artifactId&amp;gt;demo-artifactId&amp;lt;/artifactId&amp;gt;    &amp;lt;version&amp;gt;[2.0.1,)&amp;lt;/version&amp;gt;&amp;lt;/">
+<meta name="description" content="使用Maven的range dependency机制： 12345&amp;lt;dependency&amp;gt;    &amp;lt;groupId&amp;gt;org.demogroup&amp;lt;/groupId&amp;gt;    &amp;lt;artifactId&amp;gt;demo-artifactId&amp;lt;/artifactId&amp;gt;    &amp;lt;version&amp;gt;[2.0.1,)&amp;lt;/version&amp;gt;&amp;l">
 <meta name="keywords" content="java">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Maven自动获取jar包的最新版本">
 <meta property="og:url" content="http://yoursite.com/2019/05/30/Maven自动获取jar包的最新版本/index.html">
 <meta property="og:site_name" content="技术文档整理">
-<meta property="og:description" content="使用Maven的range dependency机制： 12345&amp;lt;dependency&amp;gt;	&amp;lt;groupId&amp;gt;org.demogroup&amp;lt;/groupId&amp;gt;    &amp;lt;artifactId&amp;gt;demo-artifactId&amp;lt;/artifactId&amp;gt;    &amp;lt;version&amp;gt;[2.0.1,)&amp;lt;/version&amp;gt;&amp;lt;/">
+<meta property="og:description" content="使用Maven的range dependency机制： 12345&amp;lt;dependency&amp;gt;    &amp;lt;groupId&amp;gt;org.demogroup&amp;lt;/groupId&amp;gt;    &amp;lt;artifactId&amp;gt;demo-artifactId&amp;lt;/artifactId&amp;gt;    &amp;lt;version&amp;gt;[2.0.1,)&amp;lt;/version&amp;gt;&amp;l">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-30T09:13:05.933Z">
+<meta property="og:updated_time" content="2019-05-30T09:15:31.018Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Maven自动获取jar包的最新版本">
-<meta name="twitter:description" content="使用Maven的range dependency机制： 12345&amp;lt;dependency&amp;gt;	&amp;lt;groupId&amp;gt;org.demogroup&amp;lt;/groupId&amp;gt;    &amp;lt;artifactId&amp;gt;demo-artifactId&amp;lt;/artifactId&amp;gt;    &amp;lt;version&amp;gt;[2.0.1,)&amp;lt;/version&amp;gt;&amp;lt;/">
+<meta name="twitter:description" content="使用Maven的range dependency机制： 12345&amp;lt;dependency&amp;gt;    &amp;lt;groupId&amp;gt;org.demogroup&amp;lt;/groupId&amp;gt;    &amp;lt;artifactId&amp;gt;demo-artifactId&amp;lt;/artifactId&amp;gt;    &amp;lt;version&amp;gt;[2.0.1,)&amp;lt;/version&amp;gt;&amp;l">
 
 
 
@@ -311,7 +311,7 @@
 
       
         <p>使用Maven的range dependency机制：</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.demogroup<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>demo-artifactId<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>[2.0.1,)<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.demogroup<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>demo-artifactId<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>[2.0.1,)<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>上述依赖意思是，获取该包2.0.1以上的最新版本。</p>
 
       
