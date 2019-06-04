@@ -239,6 +239,213 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/04/jQuery学习/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="LuckyCC">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="技术文档整理">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/06/04/jQuery学习/" itemprop="url">jQuery学习</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-06-04T09:51:02+08:00">
+                2019-06-04
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="jQuery学习（1）"><a href="#jQuery学习（1）" class="headerlink" title="jQuery学习（1）"></a>jQuery学习（1）</h1><p>[TOC]</p>
+<h2 id="什么是jQuery？"><a href="#什么是jQuery？" class="headerlink" title="什么是jQuery？"></a>什么是jQuery？</h2><p>jQuery是一个JavaScript函数库。</p>
+<p>jQuery是一个轻量级的“写得少，做的多”的JavaScript库。</p>
+<p>jQuery库包含以下功能：</p>
+<ul>
+<li>HTML 元素选取</li>
+<li>HTML 元素操作</li>
+<li>CSS 操作</li>
+<li>HTML 事件函数</li>
+<li>JavaScript特效和动画</li>
+<li>HTML DOM 遍历和修改</li>
+<li>AJAX</li>
+<li>Utilities</li>
+</ul>
+<h3 id="jQuery版本问题"><a href="#jQuery版本问题" class="headerlink" title="jQuery版本问题"></a>jQuery版本问题</h3><blockquote>
+<p>1.X：兼容IE6/7/8，使用最为广泛，官方只做BUG维护，功能不再新增。一般项目，使用1.X版本就足够。</p>
+<p>2.X：不兼容IE6/7/8，很少有很用。</p>
+<p>3.X：不兼容IE6/7/8，只支持最新的浏览器，很多老的jQuery插件不支持这个版本。</p>
+</blockquote>
+<h2 id="jQuery语法"><a href="#jQuery语法" class="headerlink" title="jQuery语法"></a>jQuery语法</h2><p>通过jQuery，可以选取（查询，query）HTML元素，并对它们执行“操作”（actions）。</p>
+<p><strong>基础语法：<code>$(selector).action()</code></strong></p>
+<ul>
+<li><p>美元符号（$）定义jQuery</p>
+</li>
+<li><p>选择符（selector）查询和查找HTML元素</p>
+</li>
+<li><p>action()执行对元素的操作</p>
+</li>
+</ul>
+<p>实例：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="keyword">this</span>).hide()  <span class="comment">// 隐藏当前元素</span></span><br><span class="line">$(<span class="string">"p"</span>).hide()    <span class="comment">// 隐藏所有&lt;p&gt;元素</span></span><br><span class="line">$(<span class="string">"p.test"</span>).hide()    <span class="comment">//隐藏所有class="test"的&lt;p&gt;元素</span></span><br><span class="line">$(<span class="string">"#test"</span>).hide()    <span class="comment">//隐藏所有id="test"的元素</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><strong>. $\rightarrow$ class，# $\rightarrow$ id</strong></p>
+</blockquote>
+<h3 id="文档就绪事件"><a href="#文档就绪事件" class="headerlink" title="文档就绪事件"></a>文档就绪事件</h3><p>为了防止文档在完全加载（就绪）之前运行jQuery代码，即在DOM加载完成后才可以对DOM进行操作，所有jQuery函数位于一个<code>document ready</code>函数中：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	<span class="comment">//jQuery code   </span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h2 id="jQuery选择器"><a href="#jQuery选择器" class="headerlink" title="jQuery选择器"></a>jQuery选择器</h2><p>jQuery选择器允许对HTML元素组或者单个元素进行操作。jQuery选择器基于元素的id、类、类型、属性、属性值等“查找”（或选择）HTML元素。</p>
+<h3 id="元素选择器"><a href="#元素选择器" class="headerlink" title="元素选择器"></a>元素选择器</h3><p>元素选择器基于元素名选取元素。如页面中选取所有<code>&lt;p&gt;</code>元素：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"p"</span>)</span><br></pre></td></tr></table></figure>
+<h3 id="id选择器"><a href="#id选择器" class="headerlink" title="#id选择器"></a>#id选择器</h3><h1 id="id选择器通过HTML元素的id属性选取指定的元素。页面中元素的id应该是唯一的，所以要在页面中选取唯一的元素需要通过-id选择器："><a href="#id选择器通过HTML元素的id属性选取指定的元素。页面中元素的id应该是唯一的，所以要在页面中选取唯一的元素需要通过-id选择器：" class="headerlink" title="id选择器通过HTML元素的id属性选取指定的元素。页面中元素的id应该是唯一的，所以要在页面中选取唯一的元素需要通过#id选择器："></a>id选择器通过HTML元素的id属性选取指定的元素。页面中元素的id应该是唯一的，所以要在页面中选取唯一的元素需要通过#id选择器：</h1><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"#test"</span>)</span><br></pre></td></tr></table></figure>
+<h3 id="class选择器"><a href="#class选择器" class="headerlink" title=".class选择器"></a>.class选择器</h3><p>类选择器通过指定的class查找元素：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">".test"</span>)</span><br></pre></td></tr></table></figure>
+<p>更多选择器可以参考<a href="https://www.runoob.com/jquery/jquery-ref-selectors.html" target="_blank" rel="noopener">这里</a>。</p>
+<h2 id="jQuery事件"><a href="#jQuery事件" class="headerlink" title="jQuery事件"></a>jQuery事件</h2><p>页面对不同访问者的响应叫做事件。常见的DOM事件：</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>鼠标事件</th>
+<th>键盘事件</th>
+<th>表单事件</th>
+<th>文档/窗口事件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>click</code></td>
+<td><code>keypress</code></td>
+<td><code>submit</code></td>
+<td><code>load</code></td>
+</tr>
+<tr>
+<td><code>dblclick</code></td>
+<td><code>keydown</code></td>
+<td><code>change</code></td>
+<td><code>resize</code></td>
+</tr>
+<tr>
+<td><code>mouseenter</code></td>
+<td><code>keyup</code></td>
+<td><code>focus</code> 获取焦点</td>
+<td><code>scroll</code></td>
+</tr>
+<tr>
+<td><code>mouseleave</code></td>
+<td></td>
+<td><code>blur</code> 失去焦点</td>
+<td></td>
+</tr>
+<tr>
+<td><code>hover</code> 鼠标悬停</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>更多事件方法可以参考<a href="https://www.runoob.com/jquery/jquery-ref-events.html" target="_blank" rel="noopener">这里</a>。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/03/Git基础学习/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1318,125 +1525,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/28/Git学习/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="LuckyCC">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="技术文档整理">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/05/28/Git学习/" itemprop="url">Git学习</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-28T21:25:43+08:00">
-                2019-05-28
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Git-学习"><a href="#Git-学习" class="headerlink" title="Git 学习"></a>Git 学习</h1>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1489,7 +1577,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1502,7 +1590,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">标签</span>
                 
               </div>
