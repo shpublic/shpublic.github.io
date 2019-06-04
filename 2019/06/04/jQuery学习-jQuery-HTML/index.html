@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="什么是jQuery？jQuery是一个JavaScript函数库。 jQuery是一个轻量级的“写得少，做的多”的JavaScript库。 jQuery库包含以下功能：  HTML 元素选取 HTML 元素操作 CSS 操作 HTML 事件函数 JavaScript特效和动画 HTML DOM 遍历和修改 AJAX Utilities  jQuery版本问题 1.X：兼容IE6/7/8，使用最为广">
+<meta name="description" content="jQuery 获取内容和属性获得内容-text()、html()以及val() text() 设置或返回所选元素的文本内容 html() 设置或返回所选元素的内容（包括HTML标记） val() 设置或返回表单字段的值">
 <meta name="keywords" content="jQuery">
 <meta property="og:type" content="article">
-<meta property="og:title" content="jQuery学习">
-<meta property="og:url" content="http://yoursite.com/2019/06/04/jQuery学习/index.html">
+<meta property="og:title" content="jQuery学习-jQuery HTML">
+<meta property="og:url" content="http://yoursite.com/2019/06/04/jQuery学习-jQuery-HTML/index.html">
 <meta property="og:site_name" content="技术文档整理">
-<meta property="og:description" content="什么是jQuery？jQuery是一个JavaScript函数库。 jQuery是一个轻量级的“写得少，做的多”的JavaScript库。 jQuery库包含以下功能：  HTML 元素选取 HTML 元素操作 CSS 操作 HTML 事件函数 JavaScript特效和动画 HTML DOM 遍历和修改 AJAX Utilities  jQuery版本问题 1.X：兼容IE6/7/8，使用最为广">
+<meta property="og:description" content="jQuery 获取内容和属性获得内容-text()、html()以及val() text() 设置或返回所选元素的文本内容 html() 设置或返回所选元素的内容（包括HTML标记） val() 设置或返回表单字段的值">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-06-04T05:09:44.690Z">
+<meta property="og:updated_time" content="2019-06-04T04:01:29.754Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="jQuery学习">
-<meta name="twitter:description" content="什么是jQuery？jQuery是一个JavaScript函数库。 jQuery是一个轻量级的“写得少，做的多”的JavaScript库。 jQuery库包含以下功能：  HTML 元素选取 HTML 元素操作 CSS 操作 HTML 事件函数 JavaScript特效和动画 HTML DOM 遍历和修改 AJAX Utilities  jQuery版本问题 1.X：兼容IE6/7/8，使用最为广">
+<meta name="twitter:title" content="jQuery学习-jQuery HTML">
+<meta name="twitter:description" content="jQuery 获取内容和属性获得内容-text()、html()以及val() text() 设置或返回所选元素的文本内容 html() 设置或返回所选元素的内容（包括HTML标记） val() 设置或返回表单字段的值">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/06/04/jQuery学习/">
+  <link rel="canonical" href="http://yoursite.com/2019/06/04/jQuery学习-jQuery-HTML/">
 
 
 
 
 
-  <title>jQuery学习 | 技术文档整理</title>
+  <title>jQuery学习-jQuery HTML | 技术文档整理</title>
   
 
 
@@ -243,7 +243,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/04/jQuery学习/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/04/jQuery学习-jQuery-HTML/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="LuckyCC">
@@ -260,7 +260,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">jQuery学习</h1>
+          <h1 class="post-title" itemprop="name headline">jQuery学习-jQuery HTML</h1>
         
 
         <div class="post-meta">
@@ -272,7 +272,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-06-04T09:51:02+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-06-04T11:56:10+08:00">
                 2019-06-04
               </time>
             
@@ -310,94 +310,11 @@
       
 
       
-        <h2 id="什么是jQuery？"><a href="#什么是jQuery？" class="headerlink" title="什么是jQuery？"></a>什么是jQuery？</h2><p>jQuery是一个JavaScript函数库。</p>
-<p>jQuery是一个轻量级的“写得少，做的多”的JavaScript库。</p>
-<p>jQuery库包含以下功能：</p>
-<ul>
-<li>HTML 元素选取</li>
-<li>HTML 元素操作</li>
-<li>CSS 操作</li>
-<li>HTML 事件函数</li>
-<li>JavaScript特效和动画</li>
-<li>HTML DOM 遍历和修改</li>
-<li>AJAX</li>
-<li>Utilities</li>
+        <h2 id="jQuery-获取内容和属性"><a href="#jQuery-获取内容和属性" class="headerlink" title="jQuery 获取内容和属性"></a>jQuery 获取内容和属性</h2><h3 id="获得内容-text-、html-以及val"><a href="#获得内容-text-、html-以及val" class="headerlink" title="获得内容-text()、html()以及val()"></a>获得内容-text()、html()以及val()</h3><ul>
+<li>text() 设置或返回所选元素的文本内容</li>
+<li>html() 设置或返回所选元素的内容（包括HTML标记）</li>
+<li>val() 设置或返回表单字段的值</li>
 </ul>
-<h3 id="jQuery版本问题"><a href="#jQuery版本问题" class="headerlink" title="jQuery版本问题"></a>jQuery版本问题</h3><blockquote>
-<p>1.X：兼容IE6/7/8，使用最为广泛，官方只做BUG维护，功能不再新增。一般项目，使用1.X版本就足够。</p>
-<p>2.X：不兼容IE6/7/8，很少有很用。</p>
-<p>3.X：不兼容IE6/7/8，只支持最新的浏览器，很多老的jQuery插件不支持这个版本。</p>
-</blockquote>
-<h2 id="jQuery语法"><a href="#jQuery语法" class="headerlink" title="jQuery语法"></a>jQuery语法</h2><p>通过jQuery，可以选取（查询，query）HTML元素，并对它们执行“操作”（actions）。</p>
-<p><strong>基础语法：<code>$(selector).action()</code></strong></p>
-<ul>
-<li><p>美元符号（$）定义jQuery</p>
-</li>
-<li><p>选择符（selector）查询和查找HTML元素</p>
-</li>
-<li><p>action()执行对元素的操作</p>
-</li>
-</ul>
-<p>实例：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="keyword">this</span>).hide()  <span class="comment">// 隐藏当前元素</span></span><br><span class="line">$(<span class="string">"p"</span>).hide()    <span class="comment">// 隐藏所有&lt;p&gt;元素</span></span><br><span class="line">$(<span class="string">"p.test"</span>).hide()    <span class="comment">//隐藏所有class="test"的&lt;p&gt;元素</span></span><br><span class="line">$(<span class="string">"#test"</span>).hide()    <span class="comment">//隐藏所有id="test"的元素</span></span><br></pre></td></tr></table></figure>
-<blockquote>
-<p><strong>. $\rightarrow$ class，# $\rightarrow$ id</strong></p>
-</blockquote>
-<h3 id="文档就绪事件"><a href="#文档就绪事件" class="headerlink" title="文档就绪事件"></a>文档就绪事件</h3><p>为了防止文档在完全加载（就绪）之前运行jQuery代码，即在DOM加载完成后才可以对DOM进行操作，所有jQuery函数位于一个<code>document ready</code>函数中：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	<span class="comment">//jQuery code   </span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<h2 id="jQuery选择器"><a href="#jQuery选择器" class="headerlink" title="jQuery选择器"></a>jQuery选择器</h2><p>jQuery选择器允许对HTML元素组或者单个元素进行操作。jQuery选择器基于元素的id、类、类型、属性、属性值等“查找”（或选择）HTML元素。</p>
-<h3 id="元素选择器"><a href="#元素选择器" class="headerlink" title="元素选择器"></a>元素选择器</h3><p>元素选择器基于元素名选取元素。如页面中选取所有<code>&lt;p&gt;</code>元素：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"p"</span>)</span><br></pre></td></tr></table></figure>
-<h3 id="id选择器"><a href="#id选择器" class="headerlink" title="#id选择器"></a><code>#id</code>选择器</h3><p><code>#id</code>选择器通过HTML元素的id属性选取指定的元素。页面中元素的id应该是唯一的，所以要在页面中选取唯一的元素需要通过#id选择器：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"#test"</span>)</span><br></pre></td></tr></table></figure>
-<h3 id="class选择器"><a href="#class选择器" class="headerlink" title=".class选择器"></a><code>.class</code>选择器</h3><p>类选择器通过指定的class查找元素：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">".test"</span>)</span><br></pre></td></tr></table></figure>
-<p>更多选择器可以参考<a href="https://www.runoob.com/jquery/jquery-ref-selectors.html" target="_blank" rel="noopener">这里</a>。</p>
-<h2 id="jQuery事件"><a href="#jQuery事件" class="headerlink" title="jQuery事件"></a>jQuery事件</h2><p>页面对不同访问者的响应叫做事件。常见的DOM事件：</p>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th>鼠标事件</th>
-<th>键盘事件</th>
-<th>表单事件</th>
-<th>文档/窗口事件</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>click</code></td>
-<td><code>keypress</code></td>
-<td><code>submit</code></td>
-<td><code>load</code></td>
-</tr>
-<tr>
-<td><code>dblclick</code></td>
-<td><code>keydown</code></td>
-<td><code>change</code></td>
-<td><code>resize</code></td>
-</tr>
-<tr>
-<td><code>mouseenter</code></td>
-<td><code>keyup</code></td>
-<td><code>focus</code> 获取焦点</td>
-<td><code>scroll</code></td>
-</tr>
-<tr>
-<td><code>mouseleave</code></td>
-<td></td>
-<td><code>blur</code> 失去焦点</td>
-<td></td>
-</tr>
-<tr>
-<td><code>hover</code> 鼠标悬停</td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>更多事件方法可以参考<a href="https://www.runoob.com/jquery/jquery-ref-events.html" target="_blank" rel="noopener">这里</a>。</p>
 
       
     </div>
@@ -428,8 +345,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/06/03/Git基础学习/" rel="next" title="Git基础学习">
-                <i class="fa fa-chevron-left"></i> Git基础学习
+              <a href="/2019/06/04/jQuery学习/" rel="next" title="jQuery学习">
+                <i class="fa fa-chevron-left"></i> jQuery学习
               </a>
             
           </div>
@@ -437,10 +354,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/06/04/jQuery学习-jQuery-HTML/" rel="prev" title="jQuery学习-jQuery HTML">
-                jQuery学习-jQuery HTML <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -565,7 +478,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是jQuery？"><span class="nav-number">1.</span> <span class="nav-text">什么是jQuery？</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#jQuery版本问题"><span class="nav-number">1.1.</span> <span class="nav-text">jQuery版本问题</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#jQuery语法"><span class="nav-number">2.</span> <span class="nav-text">jQuery语法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#文档就绪事件"><span class="nav-number">2.1.</span> <span class="nav-text">文档就绪事件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#jQuery选择器"><span class="nav-number">3.</span> <span class="nav-text">jQuery选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#元素选择器"><span class="nav-number">3.1.</span> <span class="nav-text">元素选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#id选择器"><span class="nav-number">3.2.</span> <span class="nav-text">#id选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#class选择器"><span class="nav-number">3.3.</span> <span class="nav-text">.class选择器</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#jQuery事件"><span class="nav-number">4.</span> <span class="nav-text">jQuery事件</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#jQuery-获取内容和属性"><span class="nav-number">1.</span> <span class="nav-text">jQuery 获取内容和属性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#获得内容-text-、html-以及val"><span class="nav-number">1.1.</span> <span class="nav-text">获得内容-text()、html()以及val()</span></a></li></ol></li></ol></div>
             
 
           </div>
