@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="jQuery,">
 
 
 
@@ -79,14 +79,18 @@
 
 
 
+<meta name="description" content="jQuery - AJAXAJAX是与服务器交换数据的技术，在不重载全部页面的情况下实现对部分网页的更新。 jQuery-AJAX load()load()方法从服务器加载数据，并把返回的数据放入被选元素中。 语法：  $(selector).load(url, data, callback); （必需）url: 希望加载的url。 （可选）data: 与请求一起发送的查询字符串键值对集合。 （可">
+<meta name="keywords" content="jQuery">
 <meta property="og:type" content="article">
 <meta property="og:title" content="jQuery学习 - AJAX">
 <meta property="og:url" content="http://yoursite.com/2019/06/04/jQuery学习-AJAX/index.html">
 <meta property="og:site_name" content="技术文档整理">
+<meta property="og:description" content="jQuery - AJAXAJAX是与服务器交换数据的技术，在不重载全部页面的情况下实现对部分网页的更新。 jQuery-AJAX load()load()方法从服务器加载数据，并把返回的数据放入被选元素中。 语法：  $(selector).load(url, data, callback); （必需）url: 希望加载的url。 （可选）data: 与请求一起发送的查询字符串键值对集合。 （可">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-06-04T05:44:57.027Z">
+<meta property="og:updated_time" content="2019-06-04T06:06:39.859Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="jQuery学习 - AJAX">
+<meta name="twitter:description" content="jQuery - AJAXAJAX是与服务器交换数据的技术，在不重载全部页面的情况下实现对部分网页的更新。 jQuery-AJAX load()load()方法从服务器加载数据，并把返回的数据放入被选元素中。 语法：  $(selector).load(url, data, callback); （必需）url: 希望加载的url。 （可选）data: 与请求一起发送的查询字符串键值对集合。 （可">
 
 
 
@@ -306,7 +310,31 @@
       
 
       
-        
+        <h2 id="jQuery-AJAX"><a href="#jQuery-AJAX" class="headerlink" title="jQuery - AJAX"></a>jQuery - AJAX</h2><p>AJAX是与服务器交换数据的技术，在不重载全部页面的情况下实现对部分网页的更新。</p>
+<h3 id="jQuery-AJAX-load"><a href="#jQuery-AJAX-load" class="headerlink" title="jQuery-AJAX load()"></a>jQuery-AJAX load()</h3><p>load()方法从服务器加载数据，并把返回的数据放入被选元素中。</p>
+<p>语法：</p>
+<blockquote>
+<p><strong>$(selector).load(url, data, callback);</strong></p>
+<p>（必需）url: 希望加载的url。</p>
+<p>（可选）data: 与请求一起发送的查询字符串键值对集合。</p>
+<p>（可选）callback: load()方法完成后所执行的函数名称。 </p>
+</blockquote>
+<h3 id="jQuery-AJAX-get-和post"><a href="#jQuery-AJAX-get-和post" class="headerlink" title="jQuery-AJAX get()和post()"></a>jQuery-AJAX get()和post()</h3><p>两种在客户端和服务端进行请求-响应的常用方法是：GET和POST。</p>
+<ul>
+<li>GET - 从指定的资源请求数据。</li>
+<li>POST - 向指定的资源提交要处理的数据。</li>
+</ul>
+<h3 id="jQuery-get"><a href="#jQuery-get" class="headerlink" title="jQuery $.get()"></a>jQuery $.get()</h3><p>$.get()方法通过HTTP GET请求从服务器上请求数据。</p>
+<p>语法：</p>
+<blockquote>
+<p><strong>$.get(url, callback);</strong></p>
+</blockquote>
+<h3 id="jQuery-post"><a href="#jQuery-post" class="headerlink" title="jQuery $.post()"></a>jQuery $.post()</h3><p>$.post()方法通过HTTP POST请求向服务器提交数据。</p>
+<p>语法：</p>
+<blockquote>
+<p><strong>$.post(url, data, callback);</strong></p>
+</blockquote>
+
       
     </div>
     
@@ -320,6 +348,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/jQuery/" rel="tag"># jQuery</a>
+          
+        </div>
       
 
       
@@ -339,6 +373,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/06/06/Shiro学习/" rel="prev" title="Shiro学习">
+                Shiro学习 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -390,8 +428,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -408,7 +455,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-count">18</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -421,7 +468,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">标签</span>
                 
               </div>
@@ -444,6 +491,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#jQuery-AJAX"><span class="nav-number">1.</span> <span class="nav-text">jQuery - AJAX</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#jQuery-AJAX-load"><span class="nav-number">1.1.</span> <span class="nav-text">jQuery-AJAX load()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#jQuery-AJAX-get-和post"><span class="nav-number">1.2.</span> <span class="nav-text">jQuery-AJAX get()和post()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#jQuery-get"><span class="nav-number">1.3.</span> <span class="nav-text">jQuery $.get()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#jQuery-post"><span class="nav-number">1.4.</span> <span class="nav-text">jQuery $.post()</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
